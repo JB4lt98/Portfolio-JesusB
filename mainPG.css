@@ -1,223 +1,246 @@
 html{
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
 }
 
+.name{
+    text-align: center;
+    font-family: 'fantasy';
+}
 
 /* Nav Bar Here */
-.navbar {
-    background: #333;
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Ensures vertical alignment */
-    position: sticky;
-    top: 0; /* Stick to the top of the page */
-    z-index: 1000; /* Ensure it's on top of other content */
-}
+    .navbar {
+        background: #333;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Ensures vertical alignment */
+        position: sticky;
+        top: 0; /* Stick to the top of the page */
+        z-index: 1000; /* Ensure it's on top of other content */
+    }
 
-/* Styling for Navbar Items */
-.navbar ul {
-    display: flex;
-    list-style: none;
-    gap: 30px; /* Even spacing between items */
-    padding: 0;
-    margin: 0;
-}
+    /* Styling for Navbar Items */
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        gap: 30px; /* Even spacing between items */
+        padding: 0;
+        margin: 0;
+    }
 
-/* Links */
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
-}
+    /* Links */
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.3s;
+    }
 
-.navbar a:hover {
-    color: #ddd;
-    background: #444;
-    border-radius: 4px;
-    padding: 5px 10px;
-}
+    .navbar a:hover {
+        color: #ddd;
+        background: #444;
+        border-radius: 4px;
+        padding: 5px 10px;
+    }
 /* End Nav Bar */
 
 /* Image of me with text */
-.img_cont {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Distribute space evenly */
-    width: 80%; /* Control the overall width */
-    max-width: 1200px; /* Set a maximum width */
-    margin: 20px auto 40px; /* Add more space at the bottom */
-}
+    .img_cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Distribute space evenly */
+        width: 80%; /* Control the overall width */
+        max-width: 1200px; /* Set a maximum width */
+        margin: 20px auto 40px; /* Add more space at the bottom */
 
-.selfie {
-    margin-right: 20px;
-}
+    }
 
-.desc {
-    max-width: 500px;
-}
+    .selfie {
+        margin-right: 20px;
+        transition: transform 0.3s ease;
+    }
+    .selfie:hover{
+        transform: scale(1.05);
+    }
+
+    .desc {
+        max-width: 500px;
+    }
 /* End of Image of me with text */
 
 /* About Section */
-#About {
-    padding: 60px 20px;
-    background-color: #f4f4f4; /* Background color for About Me */
-    margin-top: 40px; /* Add space between Image section and About section */
-}
+    #About {
+        padding: 60px 20px;
+        background-color: #f4f4f4; /* Background color for About Me */
+        margin-top: 40px; /* Add space between Image section and About section */
+    }
 
-#About h2 {
-    text-align: center;
-    margin-bottom: 40px;
-}
+    #About h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
 
-#About p {
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: #555;
-}
+    #About p {
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #555;
+    }
 /* End About Section */
 
 /* Skills Section */
-#Skills {
-    padding: 60px 20px;
-    background-color: #f4f4f4;
-    margin-top: 40px; /* Add space between About section and Skills section */
-}
-
-#Skills h2 {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-/* Skill Boxes Container */
-#Skills .skill-container {
-    display: flex;
-    justify-content: space-between; /* Distribute space evenly between boxes */
-    flex-wrap: wrap; /* Allow boxes to wrap on smaller screens */
-    gap: auto; /* Space between boxes */
-}
-
-/* Skill Box */
-.skill-box {
-    background-color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    padding: 75px;
-    width: 300px; /* Each box takes up 30% of the width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-/* Responsive Design for Small Screens */
-@media screen and (max-width: 768px) {
-    .skill-box {
-        width: auto; /* Make boxes full width on small screens */
+    #Skills {
+        padding: 60px 20px;
+        background-color: #f4f4f4;
+        margin-top: 40px; /* Add space between About section and Skills section */
     }
-}
+
+    #Skills h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    /* Skill Boxes Container */
+    #Skills .skill-container {
+        display: flex;
+        justify-content: space-between; /* Distribute space evenly between boxes */
+        flex-wrap: wrap; /* Allow boxes to wrap on smaller screens */
+        gap: auto; /* Space between boxes */
+    }
+
+    /* Skill Box */
+    .skill-box {
+        background-color: #fff;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        padding: 75px;
+        width: 275px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .skill-box:hover{
+        transform: scale(1.05);
+    }
+
+    /* Responsive Design for Small Screens */
+    @media screen and (max-width: 768px) {
+        .skill-box {
+            width: auto; /* Make boxes full width on small screens */
+        }
+    }
 /*end section*/
 
 /* Projects Section */
-#Projects {
-    padding: 60px 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
-#Projects h2 {
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-}
-
-/* Gallery Container */
-.projects-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-/* Individual Project Box */
-.project {
-    width: 30%;
-    background-color: #f4f4f4;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.project:hover {
-    transform: scale(1.05);
-}
-
-/* Project Image */
-.project img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Project Info Section */
-.project-info {
-    padding: 20px;
-}
-
-.project-info h3 {
-    margin-top: 0;
-    font-size: 1.5rem;
-}
-
-.project-info p {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Responsive Design for Small Screens */
-@media screen and (max-width: 768px) {
-    .project {
-        width: 100%;
+    #Projects {
+        padding: 60px 20px;
+        background-color: #fff;
+        text-align: center;
     }
-}
-/* End Projects */
 
-/* Contact Section */
-#Contact {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
-}
+    #Projects h2 {
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+    }
 
-#Contact h2 {
-    margin-bottom: 20px;
-    font-size: 2rem;
-}
-
-/* Contact Icons */
-.contact-icons {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.contact-icon img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
-}
-
-.contact-icon img:hover {
-    transform: scale(1.2);
-}
-
-/* Responsive Design for Smaller Screens */
-@media screen and (max-width: 768px) {
-    .contact-icons {
-        flex-direction: column;
+    /* Gallery Container */
+    .projects-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 20px;
     }
-}
+
+    /* Individual Project Box */
+    .project {
+        width: 30%;
+        background-color: #f4f4f4;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+        transform: scale(1.05);
+    }
+
+    /* Project Image */
+    .project img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Project Info Section */
+    .project-info {
+        padding: 20px;
+    }
+
+    .project-info h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .project-info p {
+        font-size: 1rem;
+        color: #555;
+    }
+
+    /* Responsive Design for Small Screens */
+    @media screen and (max-width: 768px) {
+        .project {
+            width: 100%;
+        }
+    }
+/* End Projects */
+
+
+
+/* Contact Section */
+    #Contact {
+        background-color: #333;
+        color: #fff;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    #Contact h2 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    /* Contact Icons */
+    .contact-icons {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .contact-icon img {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.3s ease;
+    }
+
+    .contact-icon img:hover {
+        transform: scale(1.2);
+    }
+
+    /* Responsive Design for Smaller Screens */
+    @media screen and (max-width: 768px) {
+        .contact-icons {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
 /* End Contact */
