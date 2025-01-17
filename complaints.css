@@ -1,0 +1,14 @@
+.eda{
+    text-align: center;
+    font-size: 50px;
+}
+
+.par {
+    color: black;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 20px;
+    margin-top: 25px;
+    font-size: large;
+}
