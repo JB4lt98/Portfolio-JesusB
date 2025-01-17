@@ -1,0 +1,69 @@
+body {
+    background-color: whitesmoke;
+}
+
+.bq {
+    padding: 2px 6px 4px 2px;
+    color: #555555;
+    background-color: #eeeeee;
+    border: #dddddd 2px solid;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    color: black;
+}
+
+/* Sticky header styles */
+.sticky-header {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* Stick to the top */
+    background-color: whitesmoke; /* Same background as body */
+    z-index: 10; /* Make sure it's above other content */
+    padding: 5px 0; /* Reduced padding around the header */
+}
+
+.header {
+    color: blue;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0; /* Reduced margin around the headers */
+}
+
+.par {
+    color: black;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 25px;
+    margin-top: 25px;
+    font-size: large;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.centerCat {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+ul {
+    line-height: 25px;
+    margin-left: 50px;
+    font-style: italic;
+    font-size: large;
+}

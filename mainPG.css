@@ -4,7 +4,8 @@ html{
     padding: 0;
 }
 body{
-    background-color: lightgray;
+    background: rgb(238,174,202);
+    background: linear-gradient(207deg, rgba(238,174,202,1) 0%, rgba(38,56,228,1) 39%, rgba(148,187,233,1) 81%);
     margin: 0;
     padding: 0;
 }
@@ -51,6 +52,8 @@ body{
     }
 /* End Nav Bar */
 
+
+
 /* Image of me with text */
     .img_cont {
         display: flex;
@@ -71,14 +74,17 @@ body{
     }
 
     .desc {
-        max-width: 500px;
+        max-width: 650px;
+        font-size: larger;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 2.0;
     }
 /* End of Image of me with text */
 
 /* About Section */
     #About {
         padding: 60px 20px;
-        background-color: #f4f4f4; /* Background color for About Me */
+        background-color: cyan;
         margin-top: 40px; /* Add space between Image section and About section */
     }
 
@@ -91,14 +97,15 @@ body{
         text-align: center;
         font-size: 1.2rem;
         line-height: 1.5;
-        color: #555;
+        color: black;
     }
 /* End About Section */
 
 /* Skills Section */
     #Skills {
         padding: 60px 20px;
-        background-color: #f4f4f4;
+        background: rgb(238,174,202);
+        background: linear-gradient(207deg, rgba(238,174,202,1) 0%, rgba(221,130,236,1) 44%, rgba(148,187,233,1) 69%);
         margin-top: 40px; /* Add space between About section and Skills section */
     }
 
@@ -142,7 +149,8 @@ body{
 /* Projects Section */
     #Projects {
         padding: 60px 20px;
-        background-color: #fff;
+        background: rgb(131,58,180);
+        background: linear-gradient(207deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
         text-align: center;
     }
 

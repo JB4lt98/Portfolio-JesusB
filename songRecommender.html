@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="song-style.css">
+        <meta charset="UTF-8">
+        <title>Jesus's Portfolio: Song Recommendations (Site)</title>
+    </head>
+    <body>
+        <h1>Song Recommender</h1>
+        <h2 style="text-align: center;">(WebApp Idea)</h2>
+
+        <!--What is it?-->
+        <h2 class="header sticky-header"><u>What is this Song Recommender?</u></h2>
+            <p class="par"> This song recommender will ask the user for a genre, release year, and the tempo (BPM), of a song. These can be very random, allowing the user to input any answer, and if it exists, the webapp will return a list of songs that fit the user's criteria, or similar. I plan to use the Spotify API for this project, and because this is my first time working with API's (doing both front-end and back-end together actually), this will take some time to complete. It is important to say I have been receiving guidance and some pointers from friends, so I'd like to acknowledge and thank them for that.</p>
+            <p class="par"> The languages that I will be using for this project are HTML and CSS for Front-End, and JavaScript and Python for the Back-End.</p>
+        
+        <!--Blueprints/progress-->
+        <h2 class="header sticky-header"><u>Progress so far</u></h2>
+            <p class="par">Before the Fall '24 semester started, I had worked mostly on the Front-End side of the webapp. Below is a screenshot of the site with placeholders.</p>
+                <img src="SongRecProgress.png" class="center">
+            <p class="par"> In the screenshot above, we can see the following things:</p>
+                <ul>
+                    <li>Choose a Genre</li>
+                    <li>Choose a Year</li>
+                    <li>Choose a Tempo</li>
+                </ul>
+            <p class="par"> In the "Choose a Genre" slot, I plan to have the user select one of the available genres in the drop-down menu. Next in the "Choose a Year", I will allow the user to input a year (I will find a way to limit it to a certain interval), and lastly in the "Choose a Tempo" slot, the user will be able to input a random number of beats per minute, and try to find a song that is exactly that number of beats, or close to that number.</p>
+            <p class="par"> We then have the "Submit" button. When clicked (it works), a list of songs (that are compatible with the criteria) will appear. Next to it will be the cover art of the song that is selected. Right under the cover art, I will have the title of the song displayed, as well as the artist(s). However, there is one thing I am currently working on that makes this project interesting (to me at least):</p>
+                <img src="authentication.png" class="center">
+            <p class="par"> Before any of these options appear, I want the user to authenticate themselves using Spotify (since Spotify API asks for this). The idea is that once the user reaches my site for the first time, the first thing they see is my quick paragraph and the authentication button. When clicked, the button takes them over to Spotify to log in. After that's complete, the user is again redirected back to my site and is then able to see the options and use the WebApp. At the time of writing this, I am still working on the authentication button.</p>
+
+
+        <!--Patch Notes: Jan 16, 2025-->
+        <h2 class="header sticky-header"><u>Patch Notes: January 16, 2025</u></h2>
+            <p class="par">At the time of writing this, the authentication process works! I introduced environment variables to store important pieces of information (such as API keys, and other secret info), and further expanded my Flask file to include a logout feature as well. As of now, all I have left to do is introduce SpotiPy (an API wrapper to use with the Spotify API), and get the API working. Once this is completed, I am able to improve the Web Application's look, and finally publish this.</p>
+                <video width="auto" height="auto" controls>
+                    <source src="cropped_auth.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+        
+        <!--Closing Thoughts-->
+        <h2 class="header sticky-header"><u>Closing Thoughts</u></h2>
+            <p class="par"> Once I am done with the authentication, all I will have to do is implement the API and connect them to the placeholders, and simply make the site visually appealing. I think I'm almost done, but it will take some time.</p>
+            <img src="good-cat.jpg" class="centerCat">
+
+        <!--Main-->
+        <br>
+        <a href="index.html">
+            <p>Back to Main Page</p>
+        </a>
+    </body>
+</html>
