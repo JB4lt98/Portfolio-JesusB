@@ -15,6 +15,17 @@ body{
     font-family: 'fantasy';
 }
 
+
+.par {
+    color: black;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 20px;
+    margin-top: 25px;
+    font-size: large;
+}
+
 /* Nav Bar Here */
     .navbar {
         background: #333;
