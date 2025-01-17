@@ -106,6 +106,7 @@ body{
     #About h2 {
         text-align: center;
         margin-bottom: 40px;
+        font-size: 2.5rem;
     }
 
     #About p {
@@ -126,6 +127,8 @@ body{
     #Skills h2 {
         text-align: center;
         margin-bottom: 40px;
+        color: white;
+        font-size: 2.5rem;
     }
 
     /* Skill Boxes Container */
@@ -230,40 +233,42 @@ body{
 
 
 /* Contact Section */
-    #Contact {
-        background-color: #333;
-        color: #fff;
-        padding: 40px 20px;
-        text-align: center;
-    }
+#Contact {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
 
-    #Contact h2 {
-        margin-bottom: 20px;
-        font-size: 2rem;
-    }
+#Contact h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
 
-    /* Contact Icons */
+/* Contact Icons */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-icon {
+    font-size: 2rem; /* Adjust size of icons */
+    color: #fff; /* Default icon color */
+    text-decoration: none; /* Remove underline from links */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+    color: #0073b1; /* Change color on hover (LinkedIn blue for consistency) */
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
     .contact-icons {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
+        flex-direction: column;
+        gap: 20px;
     }
+}
 
-    .contact-icon img {
-        width: 40px;
-        height: 40px;
-        transition: transform 0.3s ease;
-    }
-
-    .contact-icon img:hover {
-        transform: scale(1.2);
-    }
-
-    /* Responsive Design for Smaller Screens */
-    @media screen and (max-width: 768px) {
-        .contact-icons {
-            flex-direction: column;
-            gap: 20px;
-        }
-    }
-/* End Contact */
