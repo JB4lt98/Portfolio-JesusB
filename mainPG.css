@@ -41,7 +41,6 @@ body{
         z-index: 1000; /* Ensure it's on top of other content */
     }
 
-    /* Styling for Navbar Items */
     .navbar ul {
         display: flex;
         list-style: none;
@@ -64,7 +63,38 @@ body{
         border-radius: 4px;
         padding: 5px 10px;
     }
-/* End Nav Bar */
+
+    /* Hamburger Menu - Hidden by default */
+    .hamburger {
+        display: none;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media screen and (max-width: 768px) {
+        .navbar ul {
+            display: none;
+            flex-direction: column; /* Stack the items vertically */
+            width: 100%; /* Full width */
+            background: black;
+            text-align: center;
+        }
+
+        .navbar ul.active {
+            display: flex;
+        }
+
+        .navbar li {
+            margin: 10px 0;
+        }
+
+        .hamburger {
+            display: block;
+        }
+    }
+/*End navbar*/
 
 
 
