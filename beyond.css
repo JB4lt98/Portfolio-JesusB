@@ -1,0 +1,129 @@
+/* Beyond css */
+body{
+    background-color: black;
+}
+
+/* Nav Bar Here */
+.navbar {
+    background: Black;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensures vertical alignment */
+    position: sticky;
+    top: 0; /* Stick to the top of the page */
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+/* Styling for Navbar Items */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px; /* Even spacing between items */
+    padding: 0;
+    margin: 0;
+}
+
+/* Links */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ddd;
+    background: #444;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+/* End Nav Bar */
+
+
+/* Items Section */
+    #Items {
+        padding: 60px 20px;
+    }
+
+    #Items h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: white;
+        font-size: 2.5rem;
+    }
+
+    /* Item Boxes Container */
+    #Items .item-container {
+        display: flex;
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center; /* Center-align the boxes horizontally */
+        gap: 50px; /* Add space between the boxes */
+    }
+
+    /* Item Box */
+    .item-box {
+        background-color: #f5f5f5;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        padding: 50px;
+        width: 1050px; /* Make boxes responsive and wider */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .boxhead{
+        font-style: italic;
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 17px;
+    }
+    .boxpar{
+        line-height: 23px;
+    }
+
+    .item-box:hover {
+        transform: scale(1.05);
+    }
+
+    /* Responsive Design for Small Screens */
+    @media screen and (max-width: 768px) {
+        .item-box {
+            width: 90%; /* Ensure boxes are smaller on small screens */
+        }
+    }
+
+    .item-box:hover{
+        transform: scale(1.05);
+    }
+
+    /* Responsive Design for Small Screens */
+    @media screen and (max-width: 768px) {
+        .item-box {
+            width: auto; /* Make boxes full width on small screens */
+        }
+    }
+/*end section*/
+
+.neat_item{
+    line-height: 35px;
+}
+
+.L_n_L{
+    margin-left: 50px;
+    text-align: justify;
+}
+
+/* Gallery Styling */
+    .photos {
+        column-count: 3; /* Number of masonry columns */
+        column-gap: 15px; /* Space between columns */
+    }
+
+    .photos img {
+        width: 100%; /* Make images fit their container width */
+        margin-bottom: 15px; /* Space between images vertically */
+        border-radius: 8px; /* Rounded corners (optional) */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow (optional) */
+    }
