@@ -22,10 +22,10 @@ body{
 .par {
     color: black;
     text-align: justify;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
     line-height: 20px;
-    margin-top: 25px;
+    margin-top: 40px;
     font-size: large;
 }
 
@@ -162,11 +162,11 @@ body{
     }
 
     /* Skill Boxes Container */
+    
     #Skills .skill-container {
         display: flex;
-        justify-content: space-between; /* Distribute space evenly between boxes */
+        justify-content: space-evenly; /* Distribute space evenly between boxes */
         flex-wrap: wrap; /* Allow boxes to wrap on smaller screens */
-        gap: auto; /* Space between boxes */
     }
 
     /* Skill Box */
